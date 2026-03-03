@@ -1,5 +1,16 @@
 # Changelog
 
+## [11.0.0](https://github.com/joshuaavalon/eslint-config-typescript/compare/v10.0.0...v11.0.0) (2026-03-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Migrate to new repository
+
+### Features
+
+* Migrate to new repository ([3adf43d](https://github.com/joshuaavalon/eslint-config-typescript/commit/3adf43d7dc31b8a89fd9f82ee18c84758a432e0a))
+
 ## [10.0.0](https://github.com/joshuaavalon/eslint-config/compare/eslint-config-typescript-v9.2.2...eslint-config-typescript-v10.0.0) (2025-10-17)
 
 
