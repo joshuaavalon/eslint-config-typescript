@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.0](https://github.com/joshuaavalon/eslint-config-typescript/compare/v11.0.0...v11.1.0) (2026-05-31)
+
+
+### Features
+
+* Update dependencies ([ed7c6ed](https://github.com/joshuaavalon/eslint-config-typescript/commit/ed7c6ed006ae1ed35a691a73936867a8201b6981))
+
 ## [11.0.0](https://github.com/joshuaavalon/eslint-config-typescript/compare/v10.0.0...v11.0.0) (2026-03-03)
 
 
