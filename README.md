@@ -1,6 +1,6 @@
 # @joshuaavalon/eslint-config-typescript
 
-![NPM Version](https://img.shields.io/npm/v/%40joshuaavalon%2Feslint-config-typescript)
+[![NPM Version](https://img.shields.io/npm/v/%40joshuaavalon%2Feslint-config-typescript)](https://www.npmjs.com/package/@joshuaavalon/eslint-config-typescript)
 
 This is the opinionated ESLint configuration repository that used by myself.
 Not support is guaranteed. Use as your own risk.
