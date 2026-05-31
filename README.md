@@ -1,5 +1,7 @@
 # @joshuaavalon/eslint-config-typescript
 
+![NPM Version](https://img.shields.io/npm/v/%40joshuaavalon%2Feslint-config-typescript)
+
 This is the opinionated ESLint configuration repository that used by myself.
 Not support is guaranteed. Use as your own risk.
 
@@ -14,28 +16,25 @@ npm i -D eslint @joshuaavalon/eslint-config-typescript
 ```
 
 ```js
-import globals from "globals";
-import typescript from "typescript-eslint";
 import jsConfig from "@joshuaavalon/eslint-config-javascript";
 import tsConfig from "@joshuaavalon/eslint-config-typescript";
+import { defineConfig, globalIgnores } from "eslint/config";
+import globals from "globals";
 
-[
+export default defineConfig([
+  globalIgnores(["**/node_modules", "**/dist"], "Ignore Default Files"),
   {
-    ...tsConfig,
-    ignores: ["node_modules", "dist"],
+    extends: [jsConfig],
+    files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
+    languageOptions: { globals: { ...globals.node } },
+    name: "JavaScript Config"
+  },
+  {
+    extends: [tsConfig],
     files: ["**/*.ts"],
-    languageOptions: {
-      parser: typescript.parser,
-      parserOptions: {
-        projectService: true,
-        tsconfigDirName: import.meta.dirname
-      },
-      globals: {
-        ...globals.node,
-        ...globals.browser,
-        ...globals.nodeBuiltin
-      }
-    }
+    languageOptions: { globals: { ...globals.node } },
+    name: "TypeScript Config"
   }
-];
+]);
+
 ```

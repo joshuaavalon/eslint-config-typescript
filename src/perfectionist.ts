@@ -1,6 +1,8 @@
+import perfectionistPlugin from "eslint-plugin-perfectionist";
+import { defineConfig } from "eslint/config";
 import type { RulesConfig } from "@eslint/core";
 
-export const perfectionistRules: RulesConfig = {
+const rules: RulesConfig = {
   "@perfectionist/sort-imports": [
     "error",
     {
@@ -82,3 +84,11 @@ export const perfectionistRules: RulesConfig = {
     }
   ]
 };
+
+const config = defineConfig({
+  name: "@joshuaavalon/eslint-config-typescript/perfectionist",
+  plugins: { "@perfectionist": perfectionistPlugin },
+  rules
+});
+
+export default config;

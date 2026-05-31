@@ -1,6 +1,8 @@
+import { defineConfig } from "eslint/config";
+import typescriptEslint from "typescript-eslint";
 import type { Linter } from "eslint";
 
-export const typescriptEslintRules: Record<string, Linter.RuleSeverityAndOptions> = {
+const rules: Record<string, Linter.RuleSeverityAndOptions> = {
   "@typescript-eslint/adjacent-overload-signatures": ["error"],
   "@typescript-eslint/array-type": ["error", { default: "array" }],
   "@typescript-eslint/await-thenable": ["error"],
@@ -221,3 +223,15 @@ export const typescriptEslintRules: Record<string, Linter.RuleSeverityAndOptions
   "prefer-promise-reject-errors": ["off"],
   "require-await": ["off"]
 };
+
+const config = defineConfig({
+  languageOptions: {
+    parser: typescriptEslint.parser,
+    parserOptions: { projectService: true }
+  },
+  name: "@joshuaavalon/eslint-config-typescript/eslint",
+  plugins: { "@typescript-eslint": typescriptEslint.plugin },
+  rules
+});
+
+export default config;
