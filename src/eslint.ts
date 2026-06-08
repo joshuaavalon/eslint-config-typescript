@@ -109,7 +109,7 @@ const rules: Record<string, Linter.RuleSeverityAndOptions> = {
   "@typescript-eslint/no-import-type-side-effects": ["error"],
   "@typescript-eslint/no-inferrable-types": ["error"],
   "@typescript-eslint/no-invalid-this": ["off"],
-  "@typescript-eslint/no-invalid-void-type": ["error"],
+  "@typescript-eslint/no-invalid-void-type": ["error", { allowAsThisParameter: true }],
   "@typescript-eslint/no-loop-func": ["error"],
   "@typescript-eslint/no-magic-numbers": ["off"],
   "@typescript-eslint/no-meaningless-void-operator": ["error"],
