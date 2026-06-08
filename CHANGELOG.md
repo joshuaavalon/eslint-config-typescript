@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.1](https://github.com/joshuaavalon/eslint-config-typescript/compare/v11.1.0...v11.1.1) (2026-06-08)
+
+
+### Bug Fixes
+
+* Allow set allowAsThisParameter to true for @typescript-eslint/no-invalid-void-type ([192248f](https://github.com/joshuaavalon/eslint-config-typescript/commit/192248f453cec8f85e9717d7124735de362f5a83))
+
 ## [11.1.0](https://github.com/joshuaavalon/eslint-config-typescript/compare/v11.0.0...v11.1.0) (2026-05-31)
 
 
