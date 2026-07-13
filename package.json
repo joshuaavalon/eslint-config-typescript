@@ -11,7 +11,8 @@
   "scripts": {
     "lint": "eslint src",
     "prebuild": "rimraf dist",
-    "build": "tsc"
+    "build": "tsc",
+    "inspect": "eslint-config-inspector"
   },
   "exports": {
     ".": {
@@ -31,24 +32,25 @@
   "homepage": "https://github.com/joshuaavalon/eslint-config-typescript#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshuaavalon/eslint-config-typescript.git",
-    "directory": "packages/javascript"
+    "url": "git+https://github.com/joshuaavalon/eslint-config-typescript.git"
   },
   "bugs": {
     "url": "https://github.com/joshuaavalon/eslint-config-typescript/issues"
   },
   "dependencies": {
-    "@joshuaavalon/eslint-config-javascript": "^11.1.0",
+    "@joshuaavalon/eslint-config-javascript": "^11.1.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint-plugin-perfectionist": "^5.9.0",
-    "typescript-eslint": "^8.60.0"
+    "eslint-plugin-perfectionist": "^5.10.0",
+    "typescript-eslint": "^8.63.0"
   },
   "devDependencies": {
+    "@eslint/config-inspector": "^3.0.4",
     "@eslint/core": "^1.2.1",
-    "@typescript-eslint/utils": "^8.60.0",
-    "globals": "^17.6.0",
+    "@typescript-eslint/utils": "^8.63.0",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "globals": "^17.7.0",
     "rimraf": "^6.1.3",
-    "typescript": "^6.0.3"
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
   "peerDependencies": {
     "eslint": ">=10.4.1"
